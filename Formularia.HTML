@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Pontuações</title>
+</head>
+<body>
+
+    <h2>Formulário com Pontuações</h2>
+
+    <form action="/processar-formulario" method="post">
+        <!-- Campo de Nome -->
+        <label for="nome">Marlon:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        
+
+        <br>
+
+        <!-- Campo de CPF -->
+        <label for="cpf">148.684.269-07:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+        
+
+        <br>
+
+        <!-- Campo de Cidade -->
+        <label for="cidade">foz do iguaçu:</label>
+        <select id="cidade" name="cidade" required>
+            <option value="" disabled selected>Selecione uma cidade</option>
+            <option value="cidade1">foz do iguaçu</option>
+            <option value="cidade2">cascavel</option>
+            <option value="cidade3">maringá</option>
+            <option value="cidade4">santa terezinha</option>
+            <option value="cidade5">Cambé</option>
+            <option value="cidade6">matinhos</option>
+            <option value="cidade7">Colombo</option>
+            <option value="cidade8">londrina</option>
+            <option value="cidade9">medianeira</option>
+            <option value="cidade10">Piraquara</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select>
+        
+
+        <br>
+
+        <!-- Campo de Texto -->
+        <label for="mensagem">Abel ferreira gostoso:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite aqui" rows="4" required></textarea>
+       
+
+        <br>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
